@@ -74,15 +74,15 @@ password.addEventListener('input', () => {
   hasSpecialChar.innerText = hasSpecialCharMessage;
   hasUpperCase.innerText = hasUpperCaseMessage;
   if (longEnoughMessage === "Yes" && hasNumberMessage === "Yes" && hasSpecialCharMessage === "Yes" && hasUpperCaseMessage === "Yes") {
-    strengthMessage = "Strong";
+    strengthMessage.innerText = "Strong";
     strengthMessage.style.color = "green";
     strengthMessage.fontWeight = "bold";
   } else if (longEnoughMessage === "Yes" && (hasNumberMessage === "Yes" || hasSpecialCharMessage === "Yes" || hasUpperCaseMessage === "Yes")) {
-    strengthMessage = "Medium";
+    strengthMessage.innerText = "Medium";
     strengthMessage.style.color = "orange";
     strengthMessage.fontWeight = "bold";
   } else {
-    strengthMessage = "Weak";
+    strengthMessage.innerText = "Weak";
     strengthMessage.style.color = "red";
     strengthMessage.fontWeight = "bold";
   }
